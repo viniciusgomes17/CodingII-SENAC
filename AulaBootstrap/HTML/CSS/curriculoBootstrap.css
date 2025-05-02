@@ -54,6 +54,12 @@ h2.justo {
     width: 23.7%;
 }
 
+h2.ctt {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--cor1);
+    width: 9%;
+}
+
 img.foto {
     width: 90%;
 }
@@ -72,12 +78,12 @@ p.justificado {
 
 .subTopBcgSobre {
     background-color: var(--cor3);
-    width: 5.5em;
+    width: 5em;
 }
 
 .subTopBcgFormacao {
     background-color: var(--cor3);
-    width: 9em;
+    width: 8.3em;
 }
 
 .subTopBcgExp {
@@ -92,9 +98,13 @@ p.justificado {
 
 .subTopBcgEnd {
     background-color: var(--cor3);
-    width: 9em;
+    width: 8.1em;
 }
 
+.subTopBcgCtt {
+    background-color: var(--cor3);
+    width: 6.9em;
+}
 a.MenuVinicius {
     color: var(--cor1);
     text-decoration: none;
@@ -116,6 +126,30 @@ a {
     color: var(--cor4);
     font-weight: bold;
 }
+
+button.formulario {
+    background-color: var(--cor3);
+    color: var(--corBranca);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.formulario:hover {
+    background-color: var(--cor4);
+    color: var(--corBranca);
+}
+
+input.form-control {
+    border: 2px solid var(--cor3); /* 2px de espessura, linha sólida, azul */
+  }
+
+textarea.form-control {
+    border: 2px solid var(--cor3); /* 2px de espessura, linha sólida, azul */
+  }
 
 th.curriculo {
     background-color: var(--cor3);
@@ -154,6 +188,9 @@ th.largo10{
     scroll-margin-top: 85px;
 }
 
+#contato{
+    scroll-margin-top: 85px;
+}
 #endereco{
     scroll-margin-top: 85px;
 }

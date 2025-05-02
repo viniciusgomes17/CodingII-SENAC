@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
@@ -27,6 +28,7 @@
             <a class="MenuVinicius mx-2" href="#formacao">Formação Acadêmica</a>
             <a class="MenuVinicius mx-2" href="#experiencia">Experiência Profissional</a>
             <a class="MenuVinicius mx-2" href="#habilidades">Habilidades</a>
+            <a class="MenuVinicius mx-2" href="#contato">Contato</a>
             <a class="MenuVinicius mx-2" href="#endereco">Endereço</a>
         </div>
     </nav>
@@ -35,7 +37,7 @@
         <div id="apresentacao" class="container">
             <div class="row align-items-center">
             <div class="col-4 text-right">
-                <img class="Foto" src="img/Design sem nome.png" alt="Foto de Vinicius Gomes" title="Vinicius Gomes" width="140%">
+                <img class="Foto" src="img/Design sem nome.png" alt="Foto de Vinicius Gomes" title="Vinicius Gomes" width="90%">
                 </div>
                 
                 <div class="col-8 text-center">
@@ -63,7 +65,7 @@
             <a href="https://github.com/viniciusgomes17">
                 <img src="./img/download (1).png" alt="Logo Github" title="Github de Vinicius Gomes" height="50px"></a>
 
-            <a href="https://github.com/viniciusgomes17">
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-gomes-08b509281/">
                 <img src="./img/linkedin-social-media-icon-png_71812.jpg" alt="Linkedin de Vinicius Gomes"
                     title="Linkedin de Vinicius Gomes" height="50px"></a>
         </center>
@@ -123,9 +125,66 @@
         <li>Desenvolvimento de Software</li>
         <li>Desenvolvimento Web</li>
         <li>Linguagens de Programação: JavaScript, TypeScript, NodeJS</li>
-        <li>Linguagens de Marcação: HTML e CSS </li>
+        <li>Linguagens de Marcação: HTML e CSS</li>
+        <li>Git e GitHub</li>
     </ul>
 </div>
+    <div class="card hrBcg my-2"></div>
+</div>
+
+<div id="contato" class="container">
+    <h2 class="ctt">Contato</h2>
+    <div class="card subTopBcgCtt my-2"></div>
+    <div class="container">
+        <p class="justificado">Para entrar em contato, preencha o formulário abaixo:</p>
+        <form action="">
+            <div class="row my-3">
+                <div class="col-6">
+                    <label for="nome" class="form-label"><strong>Nome</strong></label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="col-6">
+                    <label for="Sobrenome" class="form-label"><strong>Sobrenome</strong></label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-6">
+                    <label for="email" class="form-label"><strong>Email</strong></label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="col-6">
+                    <label for="telefone" class="form-label"><strong>Telefone</strong></label>
+                    <input type="tel" class="form-control" id="telefone"
+                        placeholder="Digite seu telefone | (99)99999-9999" required>
+                </div>
+                <div class="row my-3">
+                    <div class="col-6">
+                        <label for="dataHora" class="form-label"><strong>Data/Hora</strong></label>
+                        <input type="datetime-local" class="form-control" id="dataHora" required min="2025-04-23" max="2025-12-31">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-4">
+                    <label for="formFile" class="form-label"><strong>Inserir arquivo</strong></label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </div>
+                <div class="row my-3">
+                    <div class="col-12">
+                        <label for="mensagem" class="form-label"><strong>Mensagem</strong></label>
+                        <textarea class="form-control" id="mensagem" rows="3" placeholder="Conte sua história..."
+                            required></textarea>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12 text-center">
+                    <button type="reset" class="btn formulario">Cancelar</button>
+                    <button type="submit" class="btn formulario">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="card hrBcg my-2"></div>
 </div>
     
