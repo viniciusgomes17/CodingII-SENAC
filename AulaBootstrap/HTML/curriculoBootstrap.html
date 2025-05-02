@@ -31,6 +31,7 @@
             <a class="MenuVinicius mx-2" href="#contato">Contato</a>
             <a class="MenuVinicius mx-2" href="#endereco">Endereço</a>
         </div>
+        <button id="toggle-mode" class="btn btn-outline-secondary position-fixed top-0 end-0 m-3">🌙</button> 
     </nav>
     
     <main>
@@ -62,15 +63,16 @@
         
     </p>
     <center>
-            <a href="https://github.com/viniciusgomes17">
-                <img src="./img/download (1).png" alt="Logo Github" title="Github de Vinicius Gomes" height="50px"></a>
+        <a href="https://github.com/viniciusgomes17">
+            <img src="./img/download (1).png" alt="Logo Github" title="Github de Vinicius Gomes" height="50px"></a>
 
-            <a href="https://www.linkedin.com/in/vin%C3%ADcius-gomes-08b509281/">
-                <img src="./img/linkedin-social-media-icon-png_71812.jpg" alt="Linkedin de Vinicius Gomes"
-                    title="Linkedin de Vinicius Gomes" height="50px"></a>
-        </center>
-    </div>
+        <a href="https://www.linkedin.com/in/vin%C3%ADcius-gomes-08b509281/">
+            <img src="./img/linkedin-social-media-icon-png_71812.jpg" alt="Linkedin de Vinicius Gomes"
+                title="Linkedin de Vinicius Gomes" height="50px"></a>
+    </center>
     <div class="card hrBcg my-2"></div>
+    
+    </div>
 </div>
     
     <div id="formacao" class="container">
@@ -121,7 +123,7 @@
     <h2 class="justo">Habilidades Técnicas</h2>
     <div class="card subTopBcgHab my-2"></div>
             <div class="container">
-    <ul>
+    <ul class="md">
         <li>Desenvolvimento de Software</li>
         <li>Desenvolvimento Web</li>
         <li>Linguagens de Programação: JavaScript, TypeScript, NodeJS</li>
@@ -200,6 +202,30 @@
          <div class="card hrBcg my-2"></div>
         </div>
     </main>
+    
+    <script>           //cod modo escuro
+        const toggleButton = document.getElementById('toggle-mode');
+      
+        function applySavedTheme() {
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleButton.textContent = '🌞';
+          } else {
+            document.body.classList.remove('dark-mode');
+            toggleButton.textContent = '🌙';
+          }
+        }
+      
+        toggleButton.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+          const isDark = document.body.classList.contains('dark-mode');
+          toggleButton.textContent = isDark ? '🌞' : '🌙';
+          localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+      
+        applySavedTheme();
+      </script>
 </body>
 <footer>
     <center>
